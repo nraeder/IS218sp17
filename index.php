@@ -35,13 +35,12 @@
       $this->year = date("Y");
     }
   
-    public function accelerate() {
-      echo 'going faster </br>';
-    }
+      public function accelerate() {
+        echo 'going faster </br>';
+      }
 
-    public function decelerate() {
-      echo 'going slower </br>';
-    }
+      public function decelerate() {
+        echo 'going slower </br>';
+      }
   }
-
 ?>
