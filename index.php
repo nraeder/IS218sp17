@@ -6,6 +6,8 @@
     public function __construct() {
       echo 'Program Started </br>';
       $car = carFactory::create();
+      $car->accelerate();
+      $car->decelerate();
 
       print_r($car);
    }
@@ -31,6 +33,14 @@
       
       $this->make = 'ford';
       $this->year = date("Y");
+    }
+  
+    public function accelerate() {
+      echo 'going faster </br>';
+    }
+
+    public function decelerate() {
+      echo 'going slower </br>';
     }
   }
 
